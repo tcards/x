@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html style="background-color: #ffffff">
 <head>
-  
+  <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Time Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function isNumberKey(evt){ 
+    var charCode = (evt.which) ? evt.which : event.keyCode 
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) 
+        return false; 
+    return true; 
+}
+    function xfoo() {      
+      var xaddress = document.getElementById('myid').value;      
+      var res = xaddress.substr(0,1);          
+      var n = parseInt(xaddress);
+      
+      if (n > 0 && n <= 1 && res != "0") {
+      document.getElementById('search_card').innerHTML = "<img src='imagen/" + xaddress + ".png' width='200' height='250' />";
+	document.getElementById('atomix').innerHTML = "<div class='a'><div class='wrapper'>Buy/Sell - <a href='https://wax.atomichub.io' target='_blank'>wax.atomichub.io</a></div></div>";
+    } else {
+      document.getElementById('search_card').innerHTML = "<div class=wrapper><br />&nbsp;<br />CARD NOT MINED<div>";
+	document.getElementById('atomix').innerHTML = "";
+    }
+    }
+    </script>
 </head>
 <body topmargin="0">      
+  <table class="center">
+    <tr>
+    <td><div class="bb"><b>TIME</b>&nbsp;</div></td>
+    <td><img src="logo.png" width="32" height="32"></td>
+    <td><div class="bb">&nbsp;<b>CARD</b></div></td>
+    </tr>
+  </table>
+  
+  <table class="center">
+      <tr>
+      <td height="50"><div class="b"><div class="wrapper">
+        Currently Supply = <b>1</b>&nbsp;&nbsp;Time Card
+      <br />GENESIS CARD = March 15, 2021
+      <br />Every day an unique NFT, that increases in value over time.
+      </div></div></td>     
+    </tr>
+  </table>
+  <br />
+ <table class='center'>
+ <tr>
+ <td>
+   
+<div class='wrapper'>
+<input type='number' name='myaddress' id='myid' class='searchTerm' placeholder='CARD ID' onkeypress="return isNumberKey(event)">
+ <button type='submit' class='searchButton' onclick='return xfoo();'><i class='fa fa-search'></i></button>
+</div>
+ </div>
+ </td>
  
- Hola Mundo
+</tr>
+</table>
+
+  <br />
+  <table class="center"><tr>
+    <td><class id='search_card'><img src="imagen/1.png" width="200" height="250" /></class</td>
+  </tr></table>
+
+<br />
+  <table class="center"><tr>
+    <td><class id='atomix'><div class="a"><div class="wrapper">Buy/Sell - <a href="https://wax.atomichub.io" target="_blank">wax.atomichub.io</a></div></div></class</td>
+  </tr></table>
+
 </body>
 </html>
