@@ -22,9 +22,11 @@
       if (n > 0 && n <= 1 && res != "0") {
       document.getElementById('search_card').innerHTML = "<img src='imagen/" + xaddress + ".png' width='200' height='250' />";
 	document.getElementById('atomix').innerHTML = "<div class='a'><div class='wrapper'>Buy/Sell - <a href='https://wax.atomichub.io' target='_blank'>wax.atomichub.io</a></div></div>";
-    } else {
+    document.getElementById('atomix1').innerHTML = "<div class='b'><div class='wrapper'>Author : <b>up3aw.wam</b></div></div>";
+      } else {
       document.getElementById('search_card').innerHTML = "<div class=wrapper><br />&nbsp;<br />CARD NOT MINED<div>";
 	document.getElementById('atomix').innerHTML = "";
+	document.getElementById('atomix1').innerHTML = "";
     }
     }
     </script>
@@ -69,8 +71,11 @@
 
 <br />
   <table class="center"><tr>
-    <td><class id='atomix'><div class="a"><div class="wrapper">Buy/Sell - <a href="https://wax.atomichub.io/explorer/collection/thetimecards" target="_blank">wax.atomichub.io</a></div></div></class</td>
+    <td><class id='atomix'><div class="a"><div class="wrapper">Buy/Sell - <a href="https://wax.atomichub.io/explorer/collection/thetimecards" target="_blank">wax.atomichub.io</a></div></div></class></td>
   </tr></table>
-
+<br />
+  <table class="center"><tr>
+    <td><class id='atomix1'><div class="b"><div class="wrapper">Author : <b>up3aw.wam</b></div></div></class></td>
+  </tr></table>
 </body>
 </html>
