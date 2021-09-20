@@ -1,0 +1,29 @@
+A:link {text-decoration: none; COLOR: #ffffff}
+A:visited {text-decoration: none; COLOR: #ffffff}
+A:active {text-decoration: none; COLOR: #ffffff}
+A:hover {text-decoration: none; COLOR: #ffffff}
+.altLinks A:link { color: #4267b2 }
+.altLinks A:visited { color: #4267b2 }
+.altLinks A:active { color: #4267b2 }
+.altLinks A:hover { color: #4267b2 }
+
+
+table {
+  background-color: #4267b2;
+  
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+input { 
+    text-align: center; 
+}
+.inputClass{
+  font-weight: bold;
+  border: 1px solid #FF9900;
+
+}
+body {
+  background-color: #ffffff;
+}
